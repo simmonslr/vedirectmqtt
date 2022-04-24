@@ -17,7 +17,7 @@ This python code may also be run in background using the following:
 
     nohup python3 /opt/vedirect/vedirectmqtt.py -s /dev/ttyUSB0 -o localhost -p 1883 -u emonpi -w emonpimqtt2016 -t emon/mppt/ 2>&1 | /usr/bin/logger -t VED0 &
 
-Which can then be manually stopped using:
+Which can then be manually stopped with:
 
     ps ax | grep vedirect   find executing process number
     kill -9 xxxx            process number found above
