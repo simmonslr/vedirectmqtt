@@ -21,3 +21,7 @@ Which can then be manually stopped using:
 
     ps ax | grep vedirect   find executing process number
     kill -9 xxxx            process number found above
+    
+The vedirectmqtt.sh bash script may also be used, which will respawn the process, should it fail:
+
+    nohup /opt/vedirect/vedirectmqtt.sh 2>&1 | /usr/bin/logger -t VEDMQTT &
